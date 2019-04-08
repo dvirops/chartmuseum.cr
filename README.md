@@ -1,6 +1,6 @@
 # Chartmuseum.cr
 
-[![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](<LINK-TO-YOUR-DOCUMENTATION>)
+[![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://joshdvir.github.io/chartmuseum.cr/)
 [![GitHub release](https://img.shields.io/github/release/joshdvir/chartmuseum.cr.svg)](https://github.com/joshdvir/chartmuseum.cr/releases)
 [![Build Status](https://travis-ci.org/joshdvir/chartmuseum.cr.svg?branch=master)](https://travis-ci.org/joshdvir/chartmuseum.cr)
 
@@ -13,11 +13,11 @@ Inspired from [gitlab](https://github.com/icyleaf/gitlab.cr).
 
 1. Add the dependency to your `shard.yml`:
 
-   ```yaml
-   dependencies:
-     chartmuseum:
-       github: joshdvir/chartmuseum.cr
-   ```
+```yaml
+dependencies:
+  chartmuseum:
+    github: joshdvir/chartmuseum.cr
+```
 
 2. Run `shards install`
 
