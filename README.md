@@ -13,13 +13,13 @@ Inspired from [gitlab](https://github.com/icyleaf/gitlab.cr).
 
 1. Add the dependency to your `shard.yml`:
 
-```yaml
+```yml
 dependencies:
   chartmuseum:
     github: joshdvir/chartmuseum.cr
 ```
 
-2. Run `shards install`
+1. Run `shards install`
 
 ## Usage
 
