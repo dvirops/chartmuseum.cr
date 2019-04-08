@@ -13,7 +13,7 @@ Inspired from [gitlab](https://github.com/icyleaf/gitlab.cr).
 
 1. Add the dependency to your `shard.yml`:
 
-```yml
+```yaml
 dependencies:
   chartmuseum:
     github: joshdvir/chartmuseum.cr
