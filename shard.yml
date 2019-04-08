@@ -1,5 +1,7 @@
 name: chartmuseum
 version: 0.1.0
+description: |
+  Chartmuseum.cr is a Chartmuseum API wrapper writes with Crystal Language.
 
 dependencies:
   halite:

@@ -1,6 +1,13 @@
-# chartmuseum
+# Chartmuseum.cr
 
-TODO: Write a description here
+[![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](<LINK-TO-YOUR-DOCUMENTATION>)
+[![GitHub release](https://img.shields.io/github/release/joshdvir/chartmuseum.cr.svg)](https://github.com/joshdvir/chartmuseum.cr/releases)
+[![Build Status](https://travis-ci.org/joshdvir/chartmuseum.cr.svg?branch=master)](https://travis-ci.org/joshdvir/chartmuseum.cr)
+
+
+Chartmuseum.cr is a [Chartmuseum API](https://chartmuseum.com/) wrapper writes with [Crystal](http://crystal-lang.org/) Language.
+
+Inspired from [gitlab](https://github.com/icyleaf/gitlab.cr).
 
 ## Installation
 
@@ -9,7 +16,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      chartmuseum:
-       github: your-github-user/chartmuseum
+       github: joshdvir/chartmuseum.cr
    ```
 
 2. Run `shards install`
@@ -28,7 +35,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/chartmuseum/fork>)
+1. Fork it (<https://github.com/joshdvir/chartmuseum/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +43,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [your-name-here](https://github.com/your-github-user) - creator and maintainer
+- [Josh Dvir](https://github.com/joshdvir) - creator and maintainer
