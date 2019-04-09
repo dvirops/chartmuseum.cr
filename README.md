@@ -58,8 +58,8 @@ charts = chartmuseum_client.version("application-1", "6412")
 
 ##### Chart Manipulation
 - `GET /api/charts` - list all charts
-- `GET /api/charts/<name>` - list all versions of a chart
-- `GET /api/charts/<name>/<version>` - describe a chart version
+- `GET /api/charts/[name]` - list all versions of a chart
+- `GET /api/charts/[name]/[version]` - describe a chart version
 
 ### Server Info
 - `GET /health` - returns 200 OK
