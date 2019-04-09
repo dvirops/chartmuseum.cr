@@ -26,7 +26,9 @@ describe Chartmuseum::Client::Chart do
       chart[0]["version"].as_s.should eq "6410"
       chart[0]["version"].as_s.should eq "6410"
     end
+  end
 
+  describe ".version" do
     it "should return information about a specific version of a chart" do
       stub_get("/api/charts/application-1/6412", "version")
       chart = client.version("application-1", "6412")
