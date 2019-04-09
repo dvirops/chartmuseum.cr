@@ -69,7 +69,7 @@ charts = chartmuseum_client.version("application-1", "6412")
 ##### Chart Manipulation
 - `POST /api/charts` - upload a new chart version
 - `POST /api/prov` - upload a new provenance file
-- `DELETE /api/charts/<name>/<version>` - delete a chart version (and corresponding provenance file)
+- `DELETE /api/charts/[name]/[version]` - delete a chart version (and corresponding provenance file)
 
 ## Development
 
@@ -85,7 +85,7 @@ charts = chartmuseum_client.version("application-1", "6412")
 
 ## Contributing
 
-1. Fork it (<https://github.com/joshdvir/chartmuseum.cr/fork>)
+1. Fork it (https://github.com/joshdvir/chartmuseum.cr/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
