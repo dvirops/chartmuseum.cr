@@ -6,7 +6,7 @@ module Chartmuseum
     module Chart
       # Gets a list of all charts.
       #
-      # - return [JSON::Any]  List of all versions of a chart.
+      # - return [JSON::Any] List of all charts and their versions.
       #
       # ```
       # client.charts
@@ -18,7 +18,7 @@ module Chartmuseum
       # Gets a list of all versions of a chart.
       #
       # - chart [String] The name of a chart.
-      # - return [JSON::Any]  List of all versions of a chart.
+      # - return [JSON::Any] List of all versions of a specific chart.
       #
       # ```
       # client.charts("application_x")
@@ -31,7 +31,7 @@ module Chartmuseum
       #
       # - chart [String] The name of a chart.
       # - version [String] The name of a chart.
-      # - return [JSON::Any]  List of all versions of a chart.
+      # - return [JSON::Any] specific version of a chart.
       #
       # ```
       # client.verion("application_x", "version_1")
