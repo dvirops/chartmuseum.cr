@@ -79,9 +79,8 @@ charts = chartmuseum_client.version("application-1", "6412")
 
 ### Commands
 
-* From inside the root of the project run `docker-compose up -d`
-* Exec to the container created `docker exec -it chartmuseum_app_1 bash`
-* When inside the container run the tests `crystal spec`
+* From inside the root of the project run `docker-compose up`
+* The container is configured to run tests every time a file is changed so just start developing.
 
 ## Contributing
 
