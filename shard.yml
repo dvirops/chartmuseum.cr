@@ -15,6 +15,6 @@ development_dependencies:
 authors:
   - Josh Dvir <josh@dvir.us>
 
-crystal: 0.27.2
+crystal: 0.28.0
 
 license: MIT
