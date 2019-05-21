@@ -6,6 +6,7 @@ description: |
 dependencies:
   halite:
     github: icyleaf/halite
+    version: 0.10.0
 
 development_dependencies:
   webmock:
