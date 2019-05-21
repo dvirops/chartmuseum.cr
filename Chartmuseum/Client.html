@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.28.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/devops-israel/chartmuseum.cr">
+  <title>Chartmuseum::Client - github.com/devops-israel/chartmuseum.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum" data-name="chartmuseum">
+      <a href="../Chartmuseum.html">Chartmuseum</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Client" data-name="chartmuseum::client">
+      <a href="../Chartmuseum/Client.html">Client</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Client/Chart" data-name="chartmuseum::client::chart">
+      <a href="../Chartmuseum/Client/Chart.html">Chart</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error" data-name="chartmuseum::error">
+      <a href="../Chartmuseum/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/APIError" data-name="chartmuseum::error::apierror">
+      <a href="../Chartmuseum/Error/APIError.html">APIError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/BadGateway" data-name="chartmuseum::error::badgateway">
+      <a href="../Chartmuseum/Error/BadGateway.html">BadGateway</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/BadRequest" data-name="chartmuseum::error::badrequest">
+      <a href="../Chartmuseum/Error/BadRequest.html">BadRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/Conflict" data-name="chartmuseum::error::conflict">
+      <a href="../Chartmuseum/Error/Conflict.html">Conflict</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/Error" data-name="chartmuseum::error::error">
+      <a href="../Chartmuseum/Error/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/Forbidden" data-name="chartmuseum::error::forbidden">
+      <a href="../Chartmuseum/Error/Forbidden.html">Forbidden</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/InsufficientStorage" data-name="chartmuseum::error::insufficientstorage">
+      <a href="../Chartmuseum/Error/InsufficientStorage.html">InsufficientStorage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/InternalServerError" data-name="chartmuseum::error::internalservererror">
+      <a href="../Chartmuseum/Error/InternalServerError.html">InternalServerError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/MethodNotAllowed" data-name="chartmuseum::error::methodnotallowed">
+      <a href="../Chartmuseum/Error/MethodNotAllowed.html">MethodNotAllowed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/NotFound" data-name="chartmuseum::error::notfound">
+      <a href="../Chartmuseum/Error/NotFound.html">NotFound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/ServiceUnavailable" data-name="chartmuseum::error::serviceunavailable">
+      <a href="../Chartmuseum/Error/ServiceUnavailable.html">ServiceUnavailable</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/Unauthorized" data-name="chartmuseum::error::unauthorized">
+      <a href="../Chartmuseum/Error/Unauthorized.html">Unauthorized</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/chartmuseum.cr/Chartmuseum/Error/Unprocessable" data-name="chartmuseum::error::unprocessable">
+      <a href="../Chartmuseum/Error/Unprocessable.html">Unprocessable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Chartmuseum::Client
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Chartmuseum/Client.html">Chartmuseum::Client</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Chartmuseum API Client wrapper</p>
+
+<p>See the <a href="https://chartmuseum.com/docs/" target="_blank">Chartmuseum Offical API Document</a> for more details.</p>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../Chartmuseum/Client/Chart.html">Chartmuseum::Client::Chart</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client/chart.cr#L2" target="_blank">
+        chartmuseum/client/chart.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L10" target="_blank">
+        chartmuseum/client.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28endpoint%3AString%2Cusername%3AString%3F%2Cpassword%3AString%3F%29-class-method" class="signature"><strong>.new</strong>(endpoint : String, username : String?, password : String?)</a>
+        
+          <div class="summary"><p>Create a new client</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#available%3F-instance-method" class="signature"><strong>#available?</strong></a>
+        
+          <div class="summary"><p>Return a <code>Bool</code> status by chartmuseum service</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#endpoint%3AString-instance-method" class="signature"><strong>#endpoint</strong> : String</a>
+        
+          <div class="summary"><p>The endpoint of Chartmuseum</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#endpoint%3D%28endpoint%29-instance-method" class="signature"><strong>#endpoint=</strong>(endpoint)</a>
+        
+          <div class="summary"><p>The endpoint of Chartmuseum</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get%28uri%3AString%2Cheaders%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%3F%3Dnil%2Cparams%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%3F%3Dnil%29%3AHalite%3A%3AResponse-instance-method" class="signature"><strong>#get</strong>(uri : String, headers : Hash(String, UNDERSCORE) | NamedTuple? = <span class="n">nil</span>, params : Hash(String, UNDERSCORE) | NamedTuple? = <span class="n">nil</span>) : Halite::Response</a>
+        
+          <div class="summary"><p>Return a Halite::Response by sending a GET method http request</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#password%3AString%3F-instance-method" class="signature"><strong>#password</strong> : String?</a>
+        
+          <div class="summary"><p>The password (for basic authentication) of Chartmuseum</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#password%3D%28password%29-instance-method" class="signature"><strong>#password=</strong>(password)</a>
+        
+          <div class="summary"><p>The password (for basic authentication) of Chartmuseum</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#username%3AString%3F-instance-method" class="signature"><strong>#username</strong> : String?</a>
+        
+          <div class="summary"><p>The username (for basic authentication) of Chartmuseum</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#username%3D%28username%29-instance-method" class="signature"><strong>#username=</strong>(username)</a>
+        
+          <div class="summary"><p>The username (for basic authentication) of Chartmuseum</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../Chartmuseum/Client/Chart.html">Chartmuseum::Client::Chart</a></code></h3>
+  
+  
+    <a href="../Chartmuseum/Client/Chart.html#chart%28chart%3AString%29%3AJSON%3A%3AAny-instance-method" class="tooltip">
+      <span>chart(chart : String) : JSON::Any</span>
+    chart</a>, 
+    
+  
+    <a href="../Chartmuseum/Client/Chart.html#charts%3AJSON%3A%3AAny-instance-method" class="tooltip">
+      <span>charts : JSON::Any</span>
+    charts</a>, 
+    
+  
+    <a href="../Chartmuseum/Client/Chart.html#version%28chart%3AString%2Cversion%3AString%29%3AJSON%3A%3AAny-instance-method" class="tooltip">
+      <span>version(chart : String, version : String) : JSON::Any</span>
+    version</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(endpoint:String,username:String?,password:String?)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(endpoint : String, username : String?, password : String?)
+
+        <a class="method-permalink" href="#new%28endpoint%3AString%2Cusername%3AString%3F%2Cpassword%3AString%3F%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Create a new client</p>
+
+<pre><code><span class="t">Chartmuseum</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span>(<span class="s">&quot;&lt;endpoint&gt;&quot;</span>, <span class="s">&quot;&lt;username&gt;&quot;</span>, <span class="s">&quot;&lt;password&gt;&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="available?-instance-method">
+      <div class="signature">
+        
+        def <strong>available?</strong>
+
+        <a class="method-permalink" href="#available%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a <code>Bool</code> status by chartmuseum service</p>
+
+<ul><li>Return <code>Bool</code></li></ul>
+
+<pre><code>client.available? <span class="c"># =&gt; true</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="endpoint:String-instance-method">
+      <div class="signature">
+        
+        def <strong>endpoint</strong> : String
+
+        <a class="method-permalink" href="#endpoint%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The endpoint of Chartmuseum</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="endpoint=(endpoint)-instance-method">
+      <div class="signature">
+        
+        def <strong>endpoint=</strong>(endpoint)
+
+        <a class="method-permalink" href="#endpoint%3D%28endpoint%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The endpoint of Chartmuseum</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(uri:String,headers:Hash(String,UNDERSCORE)|NamedTuple?=nil,params:Hash(String,UNDERSCORE)|NamedTuple?=nil):Halite::Response-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(uri : String, headers : Hash(String, UNDERSCORE) | NamedTuple? = <span class="n">nil</span>, params : Hash(String, UNDERSCORE) | NamedTuple? = <span class="n">nil</span>) : Halite::Response
+
+        <a class="method-permalink" href="#get%28uri%3AString%2Cheaders%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%3F%3Dnil%2Cparams%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%3F%3Dnil%29%3AHalite%3A%3AResponse-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a Halite::Response by sending a GET method http request</p>
+
+<pre><code>client.get(<span class="s">&quot;/path&quot;</span>, params: {
+  first_name: <span class="s">&quot;foo&quot;</span>,
+  last_name:  <span class="s">&quot;bar&quot;</span>
+})</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="password:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>password</strong> : String?
+
+        <a class="method-permalink" href="#password%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The password (for basic authentication) of Chartmuseum</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="password=(password)-instance-method">
+      <div class="signature">
+        
+        def <strong>password=</strong>(password)
+
+        <a class="method-permalink" href="#password%3D%28password%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The password (for basic authentication) of Chartmuseum</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="username:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>username</strong> : String?
+
+        <a class="method-permalink" href="#username%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The username (for basic authentication) of Chartmuseum</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="username=(username)-instance-method">
+      <div class="signature">
+        
+        def <strong>username=</strong>(username)
+
+        <a class="method-permalink" href="#username%3D%28username%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The username (for basic authentication) of Chartmuseum</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/chartmuseum.cr/blob/97a91df7ffd176c19f8962bace3a53954b6f2eb4/src/chartmuseum/client.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
